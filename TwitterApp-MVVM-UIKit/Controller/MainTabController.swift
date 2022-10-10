@@ -38,6 +38,7 @@ class MainTabController: UITabBarController {
         actionButton.widthAnchor.constraint(equalToConstant: 56).isActive = true
         actionButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -64).isActive = true
         actionButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -16).isActive = true
+        actionButton.layer.cornerRadius = 56/2
         
     }
     
