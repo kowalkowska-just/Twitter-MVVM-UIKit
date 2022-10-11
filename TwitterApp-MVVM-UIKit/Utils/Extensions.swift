@@ -16,7 +16,7 @@ extension UIView {
                 bottom: NSLayoutYAxisAnchor? = nil,
                 right: NSLayoutXAxisAnchor? = nil,
                 paddingTop: CGFloat = 0,
-                paddingLeft: CGFloat= 0,
+                paddingLeft: CGFloat = 0,
                 paddingBottom: CGFloat = 0,
                 paddingRight: CGFloat = 0,
                 width: CGFloat? = nil,
@@ -60,7 +60,7 @@ extension UIView {
         translatesAutoresizingMaskIntoConstraints = false
         centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
     
-        if let topAnchor = topAnchor, let padding = paddingTop {
+        if let topAnchor = topAnchor, let padding = paddingLeft {
             self.topAnchor.constraint(equalTo: topAnchor, constant: padding).isActive = true
         }
     }
