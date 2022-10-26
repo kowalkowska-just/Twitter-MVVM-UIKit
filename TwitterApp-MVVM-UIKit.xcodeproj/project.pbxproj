@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D114044A2909C3910022F364 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11404492909C3910022F364 /* Utilities.swift */; };
 		D1C00C0228F2E9F7000CBDDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C00C0128F2E9F7000CBDDD /* AppDelegate.swift */; };
 		D1C00C0428F2E9F7000CBDDD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C00C0328F2E9F7000CBDDD /* SceneDelegate.swift */; };
 		D1C00C0928F2E9F7000CBDDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1C00C0728F2E9F7000CBDDD /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D11404492909C3910022F364 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		D1C00BFE28F2E9F7000CBDDD /* TwitterApp-MVVM-UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TwitterApp-MVVM-UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1C00C0128F2E9F7000CBDDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1C00C0328F2E9F7000CBDDD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				D1C00C2728F33E42000CBDDD /* Extensions.swift */,
+				D11404492909C3910022F364 /* Utilities.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 			files = (
 				D1C00C0228F2E9F7000CBDDD /* AppDelegate.swift in Sources */,
 				D1C00C2628F330B0000CBDDD /* ConversationsController.swift in Sources */,
+				D114044A2909C3910022F364 /* Utilities.swift in Sources */,
 				D1C00C2428F33092000CBDDD /* NotificationsCopntroller.swift in Sources */,
 				D1C00C2828F33E42000CBDDD /* Extensions.swift in Sources */,
 				D1C00C2B28F754DB000CBDDD /* LoginController.swift in Sources */,

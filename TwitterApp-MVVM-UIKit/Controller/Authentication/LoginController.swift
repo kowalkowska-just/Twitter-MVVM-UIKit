@@ -20,34 +20,23 @@ class LoginController: UIViewController {
     }()
     
     private lazy var emailContainerView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .red
-        view.anchor(height: 50)
-        
-        let iv = UIImageView()
-        view.addSubview(iv)
-        iv.image = UIImage(named: "ic_mail_outline_white_2x-1")
-        iv.anchor(left: view.leftAnchor, bottom: view.bottomAnchor, paddingLeft: 8, paddingBottom: 8)
-        iv.setDimensions(width: 24, height: 24)
-        
+        let view = Utilities().inputContainerView(withImage: "ic_mail_outline_white_2x-1", textField: "Email", isSecureTextEntry: false)
         return view
     }()
     
     private lazy var passwardContainerView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .red
-        view.anchor(height: 50)
-        
-        let iv = UIImageView()
-        view.addSubview(iv)
-        iv.image = UIImage(named: "ic_lock_outline_white_2x")
-        iv.anchor(left: view.leftAnchor, bottom: view.bottomAnchor, paddingLeft: 8, paddingBottom: 8)
-        iv.setDimensions(width: 24, height: 24)
-        
-        view.addSubview(iv)
-        
+        let view = Utilities().inputContainerView(withImage: "ic_lock_outline_white_2x", textField: "Password", isSecureTextEntry: true)
         return view
     }()
+    
+    private let loginButton: UIButton = {
+        let button = UIButton()
+        button.backgroundColor = .white
+        button.titleLabel?.text = "Log In"
+        
+        return button
+    }()
+    
     
      //MARK: - Life cycle
         
@@ -59,6 +48,7 @@ class LoginController: UIViewController {
 
     
      //MARK: - Selectors
+
     
      //MARK: - Helpers
     
@@ -75,6 +65,6 @@ class LoginController: UIViewController {
         stack.spacing = 8
         
         view.addSubview(stack)
-        stack.anchor(top: logoImageView.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor)
+        stack.anchor(top: logoImageView.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, paddingLeft: 20, paddingRight: -20)
     }
 }
